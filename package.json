@@ -1,0 +1,48 @@
+{
+  "name": "vue-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js --ignore src/ -e js,html,css",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "axios": "^0.16.2",
+    "cross-env": "^5.0.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "vue-loader": "^13.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.11",
+    "node-sass": "^4.1.1",
+    "open": "0.0.5",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony",
+    "vue": "^2.4.2",
+    "vue-resource": "^1.3.4",
+    "vue-router": "^2.7.0",
+    "vue-style-loader": "^3.0.1",
+    "vue-template-compiler": "^2.4.2",
+    "webpack": "^3.5.1",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.14.0",
+    "webpack-module-hot-accept": "^1.0.4"
+  }
+}
